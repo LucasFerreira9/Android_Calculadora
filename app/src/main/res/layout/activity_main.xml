@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/empty"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="535dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:columnCount="4"
+            android:orientation="horizontal"
+            android:rowCount="5"
+            android:useDefaultMargins="true">
+
+            <Button
+                style = "@style/Operator_Button"
+                android:id="@+id/clearBtn"
+                android:layout_column="0"
+                android:text="@string/AC" />
+
+
+            <Button
+                style = "@style/Operator_Button"
+                android:id="@+id/ModuleBtn"
+                android:layout_column="1"
+                android:text="@string/mod" />
+
+            <Button
+                style = "@style/Operator_Button"
+                android:id="@+id/DivisionBtn"
+                android:layout_column="2"
+                android:text="@string/div"/>
+
+
+            <Button
+                style = "@style/Operator_Button"
+                android:id="@+id/multBtn"
+                android:layout_column="3"
+                android:text="@string/mult"/>
+
+
+            <Button
+                style = "@style/Number_Button"
+                android:id="@+id/SevenBtn"
+                android:layout_column="0"
+                android:text="@string/seven" />
+
+            <Button
+                style = "@style/Number_Button"
+                android:id="@+id/EightBtn"
+                android:layout_column="1"
+                android:text="@string/eight" />
+
+            <Button
+                style = "@style/Number_Button"
+                android:id="@+id/NineBtn"
+                android:layout_column="2"
+                android:text="@string/nine" />
+
+            <Button
+                style = "@style/Operator_Button"
+                android:id="@+id/SubBtn"
+                android:layout_column="3"
+                android:text="@string/sub"/>
+
+
+            <Button
+                style = "@style/Number_Button"
+                android:id="@+id/FourBtn"
+                android:layout_column="0"
+                android:text="@string/four" />
+
+            <Button
+                style = "@style/Number_Button"
+                android:id="@+id/FiveBtn"
+                android:layout_column="1"
+                android:text="@string/five" />
+
+            <Button
+                style = "@style/Number_Button"
+                android:id="@+id/SixBtn"
+                android:layout_column="2"
+                android:text="@string/six" />
+
+            <Button
+                style = "@style/Operator_Button"
+                android:id="@+id/PlusBtn"
+                android:layout_column="3"
+                android:text="@string/plus"/>
+
+            <Button
+                style = "@style/Number_Button"
+                android:id="@+id/OneBtn"
+                android:layout_column="0"
+                android:text="@string/one" />
+
+            <Button
+                style = "@style/Number_Button"
+                android:id="@+id/TwoBtn"
+                android:layout_column="1"
+                android:text="@string/two" />
+
+            <Button
+                style = "@style/Number_Button"
+                android:id="@+id/ThreeBtn"
+                android:layout_column="2"
+                android:text="@string/three" />
+
+            <Button
+                style="@style/Operator_Button"
+                android:id="@+id/EqualBtn"
+                android:layout_height="168dp"
+                android:layout_rowSpan="2"
+                android:text="@string/equal"/>
+
+
+            <Button
+                style = "@style/Number_Button"
+                android:id="@+id/ZeroBtn"
+                android:layout_width="184dp"
+                android:layout_columnSpan="2"
+                android:text="@string/zero"/>
+
+
+            <Button
+                style = "@style/Operator_Button"
+                android:id="@+id/CommonBtn"
+                android:text="@string/common"
+                android:layout_column="2"
+                />
+
+
+        </GridLayout>
+    </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
